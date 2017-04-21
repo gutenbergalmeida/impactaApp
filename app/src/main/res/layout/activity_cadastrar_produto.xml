@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastrar_produto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.impacta.app.brewerapp.CadastrarProdutoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:text="Nome:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:id="@+id/labelNomeProduto"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/nomeProduto"
+            android:layout_alignStart="@+id/nomeProduto" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/nomeProduto"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/labelNomeProduto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Valor:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:id="@+id/labelValorProduto"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/nomeProduto"
+            android:layout_alignStart="@+id/nomeProduto" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/valorProduto"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/labelValorProduto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Categoria:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:id="@+id/labelCategoriaProduto"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/categoriaProduto"
+            android:layout_alignStart="@+id/categoriaProduto" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/categoriaProduto"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/labelCategoriaProduto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Favorito:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/labelFavoritoProduto"
+                                                     />
+
+            <CheckBox
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/favorito"
+                android:text="Favorito" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="Salvar"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_salvar" />
+
+
+        </LinearLayout>
+</RelativeLayout>
